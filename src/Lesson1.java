@@ -1,4 +1,7 @@
+import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Lesson1 {
 
@@ -11,10 +14,25 @@ public class Lesson1 {
 //        sc.close();
 
 
-//        int a = 3;
-//        int c = ++a * 2;
-//        int d = a++ *1;
-//        System.out.println(c +" "+d);
+        int k = 6;
+        int i = 2;
+        int res = k & i;
+        int res2 = k | i;
+        int res3 = k ^ i;
+        System.out.println(res + " " + res2 + " " + res3);
+
+        Date dat = new Date();
+        System.out.println(dat);
+        GregorianCalendar cal = new GregorianCalendar();
+        System.out.println(cal.getTime());
+        LocalDate localDate = LocalDate.now();
+        System.out.println(localDate);
+
+
+        int a = 3;
+        int c = ++a * 2; //8
+        int d = a++ - 3;
+        System.out.println(c + " " + d);
 
 //        int res = 4 & 5;  //100
 //        int res1 = 4 | 5; //101
@@ -33,11 +51,11 @@ public class Lesson1 {
 //        System.out.println("Binary of the complementedValue: " + Integer.toBinaryString(complementedValue)); //11111111111111111111111111111100
 
 
-//        int num = 12;
-//        int leftShift = num << 2;
-//        System.out.println("Num: " + num + " leftShift: " + leftShift);
-//        System.out.println("Binary of the num: " + Integer.toBinaryString(num)); //0000000000000000000000000001100
-//        System.out.println("Binary of the leftShift: " + Integer.toBinaryString(leftShift)); //0000000000000000000000000110000
+        int num = 15;
+        int leftShift = num >> 3;
+        System.out.println("Num: " + num + " leftShift: " + leftShift);
+        System.out.println("Binary of the num: " + Integer.toBinaryString(num)); //0000000000000000000000000001100
+        System.out.println("Binary of the leftShift: " + Integer.toBinaryString(leftShift)); //0000000000000000000000000110000
 //
 //        double x = 9.97;
 //        int nx = (int) Math.round(x);
