@@ -1,6 +1,6 @@
-import Assignment1.RandomNumbers;
+import java.util.Arrays;
 
-public class Lecture {
+public class Lesson1 {
 
     public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
@@ -86,25 +86,62 @@ public class Lecture {
 //        System.out.println("b".compareTo("a"));
 //        System.out.println("a".compareTo("a"));
 
-        int sales = RandomNumbers.getRandomInt();
-        int target = RandomNumbers.getRandomInt();
-        String performance;
-        int bonus;
+//        int sales = RandomNumbers.getRandomInt();
+//        int target = RandomNumbers.getRandomInt();
+//        String performance;
+//        int bonus;
+//
+//
+//        if (sales >= 2 * target) {
+//            performance = "Excellent";
+//            bonus = 100;
+//        } else if (sales >= target) {
+//            performance = "Satisfactory";
+//            bonus = 50;
+//        } else {
+//            performance = "Unsatisfactory";
+//            bonus = 0;
+//        }
+//
+//        System.out.println(performance);
+//        System.out.println(bonus);
 
+        String[] rem = {"horse", "dog", "cat", "horse", "dog" };
+        removDup(rem);
+    }
 
-        if (sales >= 2 * target) {
-            performance = "Excellent";
-            bonus = 100;
-        } else if (sales >= target) {
-            performance = "Satisfactory";
-            bonus = 50;
-        } else {
-            performance = "Unsatisfactory";
-            bonus = 0;
+    private static void removDup(String[] arr) {
+        int idx = 0;
+        for (int i = 0; i < arr.length; i++) {
+            boolean isDuplicate = false;
+            for (int j = 0; j < i; j++) {
+
+                if (arr[i].equals(arr[j])) {
+                    isDuplicate = true;
+                }
+            }
+            if (!isDuplicate) {
+                idx++;
+            }
         }
 
-        System.out.println(performance);
-        System.out.println(bonus);
+        String[] res = new String[idx];
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            boolean isDuplicate = false;
+            for (int j = 0; j < i; j++) {
+                if (arr[i].equals(arr[j])) {
+                    isDuplicate = true;
+                }
+            }
+            if (!isDuplicate) {
+                res[count++] = arr[i];
+            }
+
+
+        }
+
+        System.out.println(Arrays.toString(res));
 
 
     }
