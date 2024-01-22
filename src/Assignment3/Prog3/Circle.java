@@ -1,4 +1,4 @@
-package Assignment3a.Prog3;
+package Assignment3.Prog3;
 
 public final class Circle {
 

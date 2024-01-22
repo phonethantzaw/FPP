@@ -1,4 +1,4 @@
-package Assignment3a.Prog2;
+package Assignment3.Prog2;
 
 import java.time.LocalDate;
 import java.time.Period;

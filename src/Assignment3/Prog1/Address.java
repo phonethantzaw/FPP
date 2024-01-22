@@ -1,4 +1,4 @@
-package Assignment3a.Prog1;
+package Assignment3.Prog1;
 
 public class Address {
     private String street;

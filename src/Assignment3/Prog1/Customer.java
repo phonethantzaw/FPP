@@ -1,4 +1,4 @@
-package Assignment3a.Prog1;
+package Assignment3.Prog1;
 
 public class Customer {
     private String firstName;
