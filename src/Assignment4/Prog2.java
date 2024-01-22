@@ -15,3 +15,19 @@ public class Prog2 {
         }
     }
 }
+
+/**
+        countDigits(0)
+        countDigits(1)			1+countDigits(0)
+        countDigits(12)			1+countDigits(1)
+        countDigits(123)		1+countDigits(12)
+        countDigits(1234)		1+countDigits(123)
+        countDigits(12345)		1+countDigits(1234)
+        main()
+
+        Runtime Stack
+
+        Console
+        Base Case
+        5
+ **/

@@ -17,3 +17,20 @@ public class Porg3 {
         }
     }
 }
+
+/**
+        sumofArr([1,2,3,4],0)
+        sumofArr([1,2,3,4],1)		1+sumofArr([1,2,3,4],0)
+        sumofArr([1,2,3,4],2)		2+sumofArr([1,2,3,4],1)
+        sumofArr([1,2,3,4],3)		3+sumofArr([1,2,3,4],2)
+        sumofArr([1,2,3,4],4)		4+sumofArr([1,2,3,4],3)
+        main()
+
+        Runtime Stack
+
+        Console
+        Base Case
+        10
+ **/
+
+
