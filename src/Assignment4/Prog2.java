@@ -4,6 +4,7 @@ public class Prog2 {
     public static void main(String[] args) {
         int n = 12345;
         System.out.println(countDigits(n));
+
     }
 
     public static int countDigits(int n) {
@@ -17,17 +18,17 @@ public class Prog2 {
 }
 
 /**
-        countDigits(0)
-        countDigits(1)			1+countDigits(0)
-        countDigits(12)			1+countDigits(1)
-        countDigits(123)		1+countDigits(12)
-        countDigits(1234)		1+countDigits(123)
-        countDigits(12345)		1+countDigits(1234)
-        main()
-
-        Runtime Stack
-
-        Console
-        Base Case
-        5
+ * countDigits(0)
+ * countDigits(1)			1+countDigits(0)
+ * countDigits(12)			1+countDigits(1)
+ * countDigits(123)		1+countDigits(12)
+ * countDigits(1234)		1+countDigits(123)
+ * countDigits(12345)		1+countDigits(1234)
+ * main()
+ * <p>
+ * Runtime Stack
+ * <p>
+ * Console
+ * Base Case
+ * 5
  **/
