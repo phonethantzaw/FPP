@@ -1,0 +1,68 @@
+
+interface BooleanSupplier{
+	boolean getAsBoolean();
+}
+interface DoubleBinaryOperator{
+	double applyAsDouble(double left, double right);
+}
+interface DoubleConsumer{
+	void accept(double value);
+}
+interface DoublePredicate{
+	boolean test(double value);
+}
+interface DoubleSupplier{
+	double getAsDouble();
+}
+interface DoubleToIntFunction{
+	int applyAsInt(double value);
+}
+interface DoubleToLongFunction{
+	long applyAsLong(double value);
+}
+interface DoubleUnaryOperator{
+	double applyAsDouble(double operand);
+}
+interface IntBinaryOperator{
+	int applyAsInt(int left, int right)
+}
+interface IntConsumer{
+	void accept(int value);
+}
+interface IntPredicate{
+	boolean test(int value);
+}
+interface IntSupplier{
+	int getAsInt();
+}
+interface IntToDoubleFunction{
+	double applyAsDouble(int value);
+}
+interface IntToLongFunction{
+	long applyAslong(int value);
+}
+interface IntUnaryOperator{
+	int applyAsInt(int operand);
+}
+interface LongBinaryOperator{
+	long applyAsLong(long left, long right);
+}
+interface LongConsumer{
+	void accept(long value);
+}
+interface LongPredicate{
+	boolean test(long value);
+}
+interface LongSupplier{
+	long getAsLong();
+}
+interface LongToDoubleFunction{
+	double applyAsDouble(long value);
+}
+interface LongToIntFunction{
+	int applyAsInt(long value);
+}
+interface LongUnaryOperator{
+	long applyAsLong(long operand);
+}
+

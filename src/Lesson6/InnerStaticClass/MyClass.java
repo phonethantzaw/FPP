@@ -1,9 +1,13 @@
 package Lesson6.InnerStaticClass;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MyClass {
     private String s = "hello";
 
     public static void main(String[] args) {
+
         new MyClass();
     }
 
