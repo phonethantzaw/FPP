@@ -46,7 +46,7 @@ public class MyStringList {
         if (s == null) return false;
 
         for (int i = 0; i < numOfElements; i++) {
-            if(currentArray[i].equals(s)) return true;
+            if (currentArray[i].equals(s)) return true;
         }
 //        for (String test : currentArray) {
 //            if (test.equals(s)) return true;

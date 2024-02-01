@@ -111,7 +111,7 @@ public class MyDoublyLinkedList {
         md.deleteAtIndex(2);
 
         for (int i = 0; i < md.numberOfNodes; i++) {
-            System.out.print(" - " + md.get(i));
+            System.out.print(" - " + md.get(i) + " - ");
         }
 
     }
