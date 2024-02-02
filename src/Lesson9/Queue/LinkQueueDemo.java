@@ -1,4 +1,4 @@
-package Lesson8.Queue;
+package Lesson9.Queue;
 
 public class LinkQueueDemo {
     public static void main(String[] args) {

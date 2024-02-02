@@ -1,6 +1,4 @@
-package Lesson8.Stack;
-
-import java.util.Stack;
+package Lesson9.Stack;
 
 public class MainStack {
     public static void main(String[] args) {

@@ -1,0 +1,43 @@
+
+
+1. Write Pre-Order Traversal output.
+    5,8,9,10,26,30,31,50,79,100,126,150,151,152,180
+
+2. Write In-Order Traversal output.
+    50,10,8,5,9,30,26,31,150,100,79,126,152,151,180
+
+3. Write Post-Order Traversal output.
+    5,9,8,26,31,30,10,79,126,100,151,180,152,150,50
+
+4. Draw the runtime stack of the following function of the following BST.
+inOrderTraversal(6); //root is 6
+deleteNode(6, 9);
+
+
+inOrderTraverse(null);
+inOrderTraverse(null);
+inOrderTraverse(10);
+inOrderTraverse(null);
+inOrderTraverse(null);
+inOrderTraverse(9);
+inOrderTraverse(null);
+inOrderTraverse(null);
+inOrderTraverse(6);
+inOrderTraverse(null);
+inOrderTraverse(null);
+inOrderTraverse(4);
+inOrderTraverse(null);
+inOrderTraverse(null);
+inOrderTraverse(1);
+inOrderTraverse(3);
+inOrderTraverse(6);
+
+RunTime Stack
+
+Output
+1 3 4 6 6 9 10
+
+
+
+deleteNode(9,9)
+deleteNode(6,9)

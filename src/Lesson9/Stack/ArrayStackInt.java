@@ -1,4 +1,4 @@
-package Lesson8.Stack;
+package Lesson9.Stack;
 
 public class ArrayStackInt {
     private Integer[] a;
