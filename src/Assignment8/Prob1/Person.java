@@ -1,12 +1,12 @@
 package Assignment8.Prob1;
 
-public class Marketing {
+public class Person {
 
     private String lasName;
     private String firstName;
     private int age;
 
-    public Marketing(String lasName, String firstName, int age) {
+    public Person(String lasName, String firstName, int age) {
         this.lasName = lasName;
         this.firstName = firstName;
         this.age = age;

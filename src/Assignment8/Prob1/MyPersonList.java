@@ -4,16 +4,16 @@ import java.util.Arrays;
 
 public class MyPersonList {
     private final int INITIAL_LENGTH = 4;
-    private Marketing[] currentArray;
+    private Person[] currentArray;
     private int numOfElements;
 
     public MyPersonList() {
-        currentArray = new Marketing[INITIAL_LENGTH];
+        currentArray = new Person[INITIAL_LENGTH];
         numOfElements = 0;
     }
 
     //Add element in last
-    public void add(Marketing s) {
+    public void add(Person s) {
         if (s == null) return;
         if (numOfElements == currentArray.length) resize();
         currentArray[numOfElements++] = s;
@@ -21,7 +21,7 @@ public class MyPersonList {
 //        numOfElements = numOfElements + 1;
     }
 
-    public Marketing get(int i) {
+    public Person get(int i) {
         if (i < 0 || i >= numOfElements) {
             return null;
         }
@@ -32,7 +32,7 @@ public class MyPersonList {
         System.out.println("resizing");
         int len = currentArray.length;
         int newlen = 2 * len;
-        Marketing[] newArray = new Marketing[newlen];
+        Person[] newArray = new Person[newlen];
         System.arraycopy(currentArray, 0, newArray, 0, len);
         currentArray = newArray;
     }
@@ -41,7 +41,7 @@ public class MyPersonList {
         return numOfElements == 0;
     }
 
-    public boolean find(Marketing s) {
+    public boolean find(Person s) {
         if (s == null) return false;
 
         for (int i = 0; i < numOfElements; i++) {
@@ -53,11 +53,11 @@ public class MyPersonList {
         return false;
     }
 
-    public void insert(Marketing s, int pos) { //E,2
+    public void insert(Person s, int pos) { //E,2
         if (pos > numOfElements || pos < 0) return;
         if (numOfElements == currentArray.length) resize();
 
-        Marketing[] temp = new Marketing[currentArray.length];//5
+        Person[] temp = new Person[currentArray.length];//5
         System.arraycopy(currentArray, 0, temp, 0, pos); //A,B,C
         temp[pos] = s;
 
@@ -66,7 +66,7 @@ public class MyPersonList {
         ++numOfElements;
     }
 
-    public boolean remove(Marketing s) {
+    public boolean remove(Person s) {
         if (numOfElements == 0) return false;//list is empty
         if (s == null) return false;
         int index = -1;
@@ -79,7 +79,7 @@ public class MyPersonList {
         }
 
         if (index == -1) return false; //s is not found in ArrayList
-        Marketing[] temp = new Marketing[currentArray.length];
+        Person[] temp = new Person[currentArray.length];
         System.arraycopy(currentArray, 0, temp, 0, index);
         System.arraycopy(currentArray, index + 1, temp, index, currentArray.length - (numOfElements + 1));
 
@@ -103,16 +103,16 @@ public class MyPersonList {
     }
 
     public Object clone() {
-        Marketing[] temp = Arrays.copyOf(currentArray, numOfElements);
+        Person[] temp = Arrays.copyOf(currentArray, numOfElements);
         return temp;
     }
 
     public static void main(String[] args) {
-        Marketing p1 = new Marketing("Mike", "Jackson", 23);
-        Marketing p2 = new Marketing("Phone", "Bryan", 29);
-        Marketing p3 = new Marketing("Philip", "Davie", 29);
-        Marketing p4 = new Marketing("Lucas", "Joseph", 29);
-        Marketing p5 = new Marketing("Thomas", "Alexander", 25);
+        Person p1 = new Person("Mike", "Jackson", 23);
+        Person p2 = new Person("Phone", "Bryan", 29);
+        Person p3 = new Person("Philip", "Davie", 29);
+        Person p4 = new Person("Lucas", "Joseph", 29);
+        Person p5 = new Person("Thomas", "Alexander", 25);
 
 
         MyPersonList personList = new MyPersonList();

@@ -5,8 +5,8 @@ public class FinallyTest {
         try {
             System.out.println("Inside test.");
 //            return;              // 1
-//            System.exit(0);      // 2
-            throw new Exception("first"); //3a
+            System.exit(0);      // 2
+//            throw new Exception("first"); //3a
 
         } catch (Exception x) {
             System.out.println(x.getMessage());
